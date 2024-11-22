@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Used Car Price Predictor</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon">🚘</span>
+        <span class="logo-text">ZapValue</span>
+      </div>
+      <nav class="nav-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Your Car, Our Prediction</h1>
+        <p>Instant, accurate price predictions for your vehicle. Enter the details to know its worth!</p>
+        <a href="#form-section" class="cta-button">Start Predicting</a>
+      </div>
+      <div class="hero-image">
+        <img src="image.png" alt="Car Illustration">
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form-section" class="form-section">
+      <h2>Predict Your Car's Price</h2>
+      <form id="priceForm">
+        <!-- Car Make -->
+        <div class="form-group">
+          <label for="make">Car Make</label>
+          <input type="text" id="make" name="make" placeholder="e.g., Honda" required>
+        </div>
+
+        <!-- Car Model -->
+        <div class="form-group">
+          <label for="model">Car Model</label>
+          <input type="text" id="model" name="model" placeholder="e.g., Civic" required>
+        </div>
+
+        <!-- Manufacturing Year -->
+        <div class="form-group">
+          <label for="year">Manufacturing Year</label>
+          <input type="number" id="year" name="year" placeholder="e.g., 2020" required>
+        </div>
+
+        <!-- Mileage -->
+        <div class="form-group">
+          <label for="mileage">Mileage (in km)</label>
+          <input type="number" id="mileage" name="mileage" placeholder="e.g., 45000" required>
+        </div>
+
+        <!-- Fuel Type -->
+        <div class="form-group">
+          <label for="fuel-type">Fuel Type</label>
+          <select id="fuel-type" name="fuel-type" required>
+            <option value="" disabled selected>Select Fuel Type</option>
+            <option value="Petrol">Petrol</option>
+            <option value="Diesel">Diesel</option>
+          </select>
+        </div>
+
+        <!-- Owner Type -->
+        <div class="form-group">
+          <label for="owner-type">Owner Type</label>
+          <select id="owner-type" name="owner-type" required>
+            <option value="" disabled selected>Select Owner Type</option>
+            <option value="First">First Owner</option>
+            <option value="Second">Second Owner</option>
+            <option value="Third">Third Owner</option>
+            <option value="Fourth & Above">Fourth & Above</option>
+          </select>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="form-button">Get Prediction</button>
+      </form>
+    </section>
+
+    <!-- Result Section -->
+    <section id="result-section" class="result-section">
+      <h2>Your Prediction Result</h2>
+      <p class="prediction-result">--</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 ZapValue. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
